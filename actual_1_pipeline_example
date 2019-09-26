@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage("Build"){
+            steps {
+                echo "El programador ha modificado... "
+            }
+        }
+        stage("Test"){
+            steps {
+                echo "El testeo fue..."
+            }
+        }
+        stage("QA"){
+            steps {
+                echo "Como mejorar..."
+            }
+        }
+        stage("Deploy"){
+            steps {
+                echo "Lanzamiento nuevamente"
+            }
+        }
+    }
+}
